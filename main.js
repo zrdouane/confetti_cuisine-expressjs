@@ -10,7 +10,6 @@ app.set('views','views');
 app.use(express.static(path.join(__dirname,'public/css')));
 app.use(express.static(path.join(__dirname,'public/images')));
 app.get('/thanks', (req, res, next) => {
-    // res.sendFile(path.join(__dirname,'views','thanks.html'));
     res.render('thanks');
 });
 app.get('/contact', (req, res) => {
